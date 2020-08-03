@@ -1,0 +1,22 @@
+<div class="backdrop" (click)="onClose()"></div>
+<div class="modal-box">
+  <div class="ui card card-width">
+    <div class="content header-color">
+      <div class="ui sub"> Task: {{data.attr.description ? data.attr.description : data.attr.description}}</div>
+    </div>
+    <div class="content ui small feed">
+      <div class="event content meta">
+        <a>Status</a>: {{data.status}}
+      </div>
+      <div class="event content meta">
+        <a>Priority</a> : {{data.attr.priority}}
+      </div>
+      <div class="event content meta">
+        <a>Due Date</a> : {{data.due_dt}}
+      </div>
+    </div>
+  </div>
+  <div class="modal-box-actions">
+    <button class="btn btn-primary" (click)="onClose()">Close</button>
+  </div>
+</div>

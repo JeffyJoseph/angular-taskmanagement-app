@@ -1,0 +1,31 @@
+<div class="auth-container">
+  <mat-card>
+    <img class="logo-style" src="https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/ce2a9ac5480b9a1fa946be527248b352">
+    <div class="content">
+      <mat-card-content>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter your email</mat-label>
+          <input #email matInput placeholder="pat@example.com" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter your password</mat-label>
+          <input #password matInput [type]="hide ? 'password' : 'text'">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+      </mat-card-content>
+      <div class="alert alert-danger alert-align" *ngIf="error">
+        <p>{{ error }}</p>
+      </div>
+      <mat-card-footer>
+        <mat-card-actions class="action-button">
+          <button mat-raised-button color="primary" (click)="onLogin()">Log in</button>
+        </mat-card-actions>
+      </mat-card-footer>
+    </div>
+  </mat-card>
+</div>
+

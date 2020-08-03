@@ -1,0 +1,17 @@
+    .main-container {
+        justify-content: center;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+      @media screen and (min-width: 640px){
+        .main-container {    
+            flex-direction: row;    
+            justify-content: space-around;  
+        }  
+        .main-container > * {
+            margin:10px !important;
+        }
+    }
+    
+    

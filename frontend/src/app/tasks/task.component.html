@@ -1,0 +1,13 @@
+<div class="task-card">
+    <mat-card>
+        <mat-card-title>
+            <button mat-raised-button class="progress" color="primary">My tasks</button> <br>
+            <span class="progress-title">Today's progress</span>
+            <span class="progress-title">{{progressValue}} %</span>
+            <mat-progress-bar class="progress-bar" mode="determinate" value={{progressValue}}></mat-progress-bar>
+            <div>
+                <app-list-task *ngFor="let task of taskTypes" [tasks]="task"></app-list-task>
+            </div>
+        </mat-card-title>
+    </mat-card>
+</div>

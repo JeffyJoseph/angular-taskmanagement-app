@@ -1,0 +1,42 @@
+.auth-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+  .mat-card {
+    width: 90%;     
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+      @media only screen and (min-width: 768px){
+        max-width:600px;
+      }
+
+        .logo-style{
+          margin: 0 auto;
+          width:150px;
+        }
+
+        .mat-form-field {
+          width:90%;
+        }
+
+        .action-button {
+          display: block !important;
+          position: relative;
+          width: 50%;
+          left: 45%;
+        }
+
+        .mat-card-content {
+          text-align: center !important;
+        }
+
+        .alert-align{
+          width: 50%; 
+          left: 25%; 
+          text-align: center;
+        }
+    }
+}

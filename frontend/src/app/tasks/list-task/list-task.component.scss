@@ -1,0 +1,47 @@
+.filterbutton {
+    border-radius: 5px;
+    height: 32px;
+    margin: 10px 10px;
+    font-size: xx-small;
+}
+
+.item {
+    border-top: none !important;
+    padding: 5px !important;
+    cursor: pointer;
+
+    .taskname{
+        font-size: small !important;
+        margin-left: 20px;
+        padding-left: 5px;
+    }
+    
+    .duedate {
+        font-size: small !important;
+        color: red;
+    }
+
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-block {
+    display: block;
+}
+
+.item:hover{
+    background-color: #80808029;
+    border-radius: 5px;
+}
+
+.accordion{
+    position: absolute;
+    left: 90%;
+    color: lightgrey;
+}
+
+.circleicon{
+    font-size: small;
+}

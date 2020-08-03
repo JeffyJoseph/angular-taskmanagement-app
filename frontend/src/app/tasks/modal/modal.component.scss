@@ -1,0 +1,35 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0000000a;
+    z-index: 50;
+  }
+  
+  .modal-box {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30vh;
+    left: 15vw;
+    width: 70%;
+    padding: 16px;
+    z-index: 100;
+    background: white;
+    box-shadow: 0 2px 8px rbga(0, 0, 0, 0.26);
+  }
+  
+  .modal-box-actions {
+    text-align: right;
+  }
+
+  .header-color{
+    background-color: lightyellow !important;
+  }
+
+  .card-width{
+    width: 100%;
+  }
+  

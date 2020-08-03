@@ -1,0 +1,31 @@
+.task-card{
+    position: relative;
+
+    .progress {
+        margin: 15px 15px;
+        height: 100%;
+    }
+
+    .progress-title{
+        margin: 15px;
+        color: gray;
+        font-size: medium;
+    }
+    
+    .progress-bar{
+        margin: 15px 15px;
+    }
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+    background-color: green;
+}
+
+::ng-deep .mat-progress-bar-buffer {
+    background: #E4E8EB;
+}
+
+::ng-deep .mat-progress-bar {
+    border-radius: 2px;
+    height: 8px !important;
+}

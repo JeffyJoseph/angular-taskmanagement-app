@@ -1,0 +1,18 @@
+<div class="ui divided items">
+  <div class="ui horizontal divider">
+    ...
+  </div>
+  <button mat-raised-button class="ui {{tasks.color}} button filterbutton" color="primary"> {{tasks.type}}
+    {{tasks.count}}</button>
+  <br>
+  <div class="item" *ngFor="let taskDetail of tasks.tasksFiltered">
+    <app-modal [data]="taskDetails" *ngIf="showInfo" (close)="onHandleClose()"></app-modal>
+    <div><i class="circle outline icon circleicon"></i>
+      <span
+        class="taskname">{{taskDetail.attr.description ? taskDetail.attr.description : taskDetail.attr.title}}</span>
+      <br>
+      <i class="angle right icon taskname"></i> <span class="duedate"> Due {{taskDetail.due_dt}}</span>
+    </div>
+    <i class="angle down icon accordion" (click)="showMore(taskDetail)"></i>
+  </div>
+</div>

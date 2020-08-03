@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white !important;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    position: fixed;        
+    padding: 10px 0;
+    bottom: 0;
+
+    i:hover {
+      border-radius: 5px;
+      font-size: xx-large;
+    }
+  }
+
+  .icon {
+      font-size: x-large;
+      margin: 10px 10px;
+      cursor: pointer;
+  }
+
+  .logo-style{
+    height: 35px;
+    width: 40px;
+    border-radius: 10px;
+    margin: 10px 10px;
+  }
